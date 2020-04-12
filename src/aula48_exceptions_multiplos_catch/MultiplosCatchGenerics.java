@@ -20,7 +20,7 @@ public class MultiplosCatchGenerics {
 
 			}
 			
-			//classe genérica para qualquer tipo de erro
+			//classe genérica, superclasse te todas as exceções, para qualquer tipo de erro
 
 			catch (Throwable erro2) {
 				System.out.println("Erro, na operação #" + (i + 1) + " ocorreu um tipo de erro GENÉRICO!");

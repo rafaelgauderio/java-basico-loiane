@@ -1,4 +1,4 @@
-package Aula34_Calculadora;
+package aula34_Calculadora;
 
 public class Calculadora {
 
