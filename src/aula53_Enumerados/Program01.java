@@ -3,7 +3,14 @@ package aula53_Enumerados;
 public class Program01 {
 
 	public static void main(String[] args) {
-
+		
+		System.out.println("ENUM\n"
+				+ "Enums extends a classe java.lang.Enum;\n"
+				+ "Enum não pode ser instanciado com new();\n"
+				+ "Podem implementar interfaces;\n"
+				+ "Não tem herança multipla, já herdam(extends) da classe java.lang;\n"
+				+ "Podem ser declaros dentro de uma classe ou como classe avulsa.");
+		
 		System.out.println("Mais elegante e organizado trabalhar com ENUM do que com constante."
 				+ "\nMaior controle da limitação das opções de valores do que deixar livre para qualquer constante.\n");
 
