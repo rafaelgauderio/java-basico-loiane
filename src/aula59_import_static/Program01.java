@@ -1,4 +1,4 @@
-package aula58_import_static;
+package aula59_import_static;
 
 
 import static java.lang.Math.pow;
