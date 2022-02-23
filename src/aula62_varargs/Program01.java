@@ -1,4 +1,4 @@
-package aula61_varargs;
+package aula62_varargs;
 
 public class Program01 {
 
