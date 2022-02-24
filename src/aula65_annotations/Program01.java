@@ -4,16 +4,13 @@ package aula65_annotations;
 		author = "Rafael",
 		site = "http://delucahigiene.com.br"
 )
-
-
 public class Program01 {
 	
 	
 	@InfoSite(
 			author = "De Luca",
 			site = "google.com.br"
-	)
-	
+	)	
 	public static void main(String[] args) {
 		
 		System.out.println("Annotations: Meta dados que permites embutir informações complementares no código:\n");
@@ -23,13 +20,7 @@ public class Program01 {
 		
 		System.out.println("Sempre precedita de @. @Override, @Inherited, @SupressWarning");
 		
-		System.out.println("Muito usado com java web, spring, hibernate, jpa");
-		
-	
-		
-		
-		
-		
+		System.out.println("Muito usado com java web, spring, hibernate, jpa");		
 
 	}
 
