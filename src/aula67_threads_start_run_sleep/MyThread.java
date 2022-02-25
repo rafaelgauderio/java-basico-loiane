@@ -18,7 +18,7 @@ public class MyThread extends Thread {
 			int counter=0;
 			while(counter<10) {
 				System.out.println(name  + " counter " + (counter+1));
-				Thread.sleep(time); //sleep por 1 segundo
+				Thread.sleep(time); 
 				counter++;
 			}
 		} catch (InterruptedException error) {
