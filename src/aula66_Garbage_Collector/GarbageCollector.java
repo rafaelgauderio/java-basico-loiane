@@ -1,3 +1,4 @@
+package aula66_Garbage_Collector;
 import javax.sql.rowset.serial.SQLOutputImpl;
 
 import aula61_passagem_parametros.Person;
