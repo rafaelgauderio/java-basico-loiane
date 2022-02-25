@@ -1,4 +1,4 @@
-package aula68_threads_Interface_Runnable;
+package aula69_threads_isAlive_join;
 
 public class MyThreadRunnable  implements Runnable{
 	//Runable é uma estância de uma execucação de uma thread
@@ -9,8 +9,6 @@ public class MyThreadRunnable  implements Runnable{
 	public MyThreadRunnable(String name, int time) {
 		this.name =  name;
 		this.time = time;
-		Thread thread = new Thread(this);
-		thread.start();
 		
 
 	}
