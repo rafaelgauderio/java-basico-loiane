@@ -8,6 +8,9 @@ public class MyThreadRunnable  implements Runnable{
 	public MyThreadRunnable(String name, int time) {
 		this.name =  name;
 		this.time = time;
+		Thread thread = new Thread(this);
+		thread.start();
+		
 
 	}
 
@@ -25,7 +28,7 @@ public class MyThreadRunnable  implements Runnable{
 			error.printStackTrace();
 		}
 
-		System.out.println(this.name + " dead");
+		System.out.println(this.name + " DEAD!");
 
 
 	}

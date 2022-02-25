@@ -6,10 +6,9 @@ public class Program01 {
 	
 	public static void main(String [] args) {
 		
-		MyThreadRunnable thread1 = new MyThreadRunnable("Thread #fast",100);
-		Thread t1 = new Thread(thread1);
-		t1.start();			
-	
+		MyThreadRunnable thread1 = new MyThreadRunnable("Thread #fast",200);
+		MyThreadRunnable thread2 = new MyThreadRunnable("Thread #medium",700);				
+		MyThreadRunnable thread3 = new MyThreadRunnable("Thread #slow",1300);
 		
 	}
 
