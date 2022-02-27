@@ -6,7 +6,7 @@ public class Program {
 		
 		System.out.println("Synchronized é a ação de coordenar as atividades entre threads que concorrerem\n"
 				+ "\tpara acessar um recurso compartilhado.\n"
-				+ "Somente uma thread deve acessar esse recurso por vez");
+				+ "Somente uma thread deve acessar esse recurso por vez.\n");
 		
 		//pa de razão 3
 		int [] pa = {1,4,7,10,13,16};
