@@ -7,6 +7,7 @@ public class Program01 {
 
 		System.out.println("Thread sendo executada sentro de um método sincronizado e precisa acessar um recurso indisponível.\n"
 				+ "A solução é liberar temporariamente ap controle do objeto, permitindo que outra thread seja executada.\n"
+				+ "Só é possível usar wait, notify dentro de um BLOCO SINCRONIZADO\n"
 				+ "\twait() - bloqueia a thread temporiamente até ela ser notificada.\n"
 				+ "\tnotify - retorna a execucação de uja thread que estava em estado wait.\n"
 				+ "\tnotifiAll - retorna todas as threads em wait, vai ter acesso ao objeto a thread de maior prioridade.\n");
@@ -15,6 +16,8 @@ public class Program01 {
 
 		ThreadClock tic = new ThreadClock("Tic", ticTack);
 		ThreadClock tack = new ThreadClock("Tack", ticTack);
+		
+		
 
 		try {
 			tic.getThread().join();
