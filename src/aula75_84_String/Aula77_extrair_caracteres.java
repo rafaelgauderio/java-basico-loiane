@@ -14,7 +14,13 @@ public class Aula77_extrair_caracteres {
 			System.out.print(name.charAt(i));
 		}		
 		
-		System.out.println("\n");
+		String  srcBegin = "srcBegin : o valor int representa o índice no qual a cópia deve ser iniciada.\n";
+		String srcEnd = "srcEnd: o valor int representa o índice no qual a cópia deve ser interrompida.\n";
+		String dst = "dst: array de char representa o array para o qual copiar os dados.\n";
+		String dstBegin = "dstBegin : o valor int representa o índice da matriz dest para começar a colar os dados copiados.\n";
+		System.out.println("\n\nMétodo getChar\n" + srcBegin + srcEnd +dst + dstBegin );	
+		
+		
 		char [] arrayNickName = new char[4];
 		name.getChars(0,4,arrayNickName,0);
 		System.out.println(arrayNickName);
