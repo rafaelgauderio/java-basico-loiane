@@ -4,7 +4,7 @@ public class MesAnoConstantes {
 	
 	public static final int JANEIRO=1;
 	public static final int FEVEREIRO=2;
-	public static final int MARÇO=3;
+	public static final int MARCO=3;
 	public static final int ABRIL=4;
 	public static final int MAIO=5;
 	public static final int JUNHO=6;

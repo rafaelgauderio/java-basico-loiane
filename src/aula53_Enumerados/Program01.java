@@ -6,13 +6,13 @@ public class Program01 {
 		
 		System.out.println("ENUM\n"
 				+ "Enums extends a classe java.lang.Enum;\n"
-				+ "Enum não pode ser instanciado com new();\n"
+				+ "Enum nï¿½o pode ser instanciado com new();\n"
 				+ "Podem implementar interfaces;\n"
-				+ "Não tem herança multipla, já herdam(extends) da classe java.lang;\n"
+				+ "Nï¿½o tem heranï¿½a multipla, jï¿½ herdam(extends) da classe java.lang;\n"
 				+ "Podem ser declaros dentro de uma classe ou como classe avulsa.");
 		
 		System.out.println("Mais elegante e organizado trabalhar com ENUM do que com constante."
-				+ "\nMaior controle da limitação das opções de valores do que deixar livre para qualquer constante.\n");
+				+ "\nMaior controle da limitaï¿½ï¿½o das opï¿½ï¿½es de valores do que deixar livre para qualquer constante.\n");
 
 		usingConstants();
 		System.out.println();
@@ -23,7 +23,7 @@ public class Program01 {
 	public static void usingConstants() {
 		int janeiro = MesAnoConstantes.JANEIRO;
 		int fevereiro = MesAnoConstantes.FEVEREIRO;
-		int março = MesAnoConstantes.MARÇO;
+		int marco = MesAnoConstantes.MARCO;
 		int abril = MesAnoConstantes.ABRIL;
 		int maio = MesAnoConstantes.MAIO;
 		int junho = MesAnoConstantes.JUNHO;
@@ -37,7 +37,7 @@ public class Program01 {
 		System.out.println("TEST USING CONSTANTS");
 		printYearMonth(janeiro);
 		printYearMonth(fevereiro);
-		printYearMonth(março);
+		printYearMonth(marco);
 		printYearMonth(abril);
 		printYearMonth(maio);
 		printYearMonth(junho);
@@ -55,7 +55,7 @@ public class Program01 {
 
 		MesAno janeiro = MesAno.JANEIRO;
 		MesAno fevereiro = MesAno.FEVEREIRO;
-		MesAno março = MesAno.MARÇO;
+		MesAno marco = MesAno.MARCO;
 		MesAno abril = MesAno.ABRIL;
 		MesAno maio = MesAno.MAIO;
 		MesAno junho = MesAno.JUNHO;
@@ -69,7 +69,7 @@ public class Program01 {
 		System.out.println("TEST USING ENUMERATED");
 		printYearMonth(janeiro);
 		printYearMonth(fevereiro);
-		printYearMonth(março);
+		printYearMonth(marco);
 		printYearMonth(abril);
 		printYearMonth(maio);
 		printYearMonth(junho);
@@ -93,7 +93,7 @@ public class Program01 {
 			System.out.println("Fevereiro");
 			break;
 		case 3:
-			System.out.println("Março");
+			System.out.println("MarÃ§o");
 			break;
 		case 4:
 			System.out.println("Abril");
@@ -135,8 +135,8 @@ public class Program01 {
 		case FEVEREIRO:
 			System.out.println("Fevereiro");
 			break;
-		case MARÇO:
-			System.out.println("Março");
+		case MARCO:
+			System.out.println("Marco");
 			break;
 		case ABRIL:
 			System.out.println("Abril");
