@@ -10,6 +10,7 @@ public class Aula76_concatenar {
 		String lastName = "de Luca";
 		String compleName = lineBreak + firstName + space + lastName;
 		System.out.println(compleName);
+		System.out.println(firstName.concat(space).concat(lastName));
 
 		System.out.println("\nConcatenate");
 		String sum = "Result of operation 17 + 10 = " + (17 + 10);
