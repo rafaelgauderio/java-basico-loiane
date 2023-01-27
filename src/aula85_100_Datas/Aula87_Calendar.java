@@ -1,6 +1,8 @@
 package aula85_100_Datas;
 
+
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
@@ -43,6 +45,12 @@ public class Aula87_Calendar {
 		System.out.println("Ontem: " + today.get(Calendar.DAY_OF_MONTH));
 		today.add(Calendar.DAY_OF_MONTH, +2);
 		System.out.println("Amanhã: " + today.get(Calendar.DAY_OF_MONTH));
+		
+		Calendar cal = Calendar.getInstance();
+		cal.set(2019, Calendar.MARCH, 28);
+		
+		Date dataDate= cal.getTime();
+		System.out.println("Data atual sem formatação: "+ dataDate);
 
 	}
 
