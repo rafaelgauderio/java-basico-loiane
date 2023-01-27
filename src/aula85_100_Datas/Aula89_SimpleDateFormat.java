@@ -13,6 +13,8 @@ public class Aula89_SimpleDateFormat {
 		
 		Locale.setDefault(Locale.US);
 		
+		System.out.println("SimpleDateFormat é usado quando queremos espeficicar um determinado formato da data e não os padrões do Java");
+		
 		SimpleDateFormat sdfYear = new SimpleDateFormat("y");
 		SimpleDateFormat sdfMonth = new SimpleDateFormat("MM");
 		SimpleDateFormat sdfMonthDesc = new SimpleDateFormat("MMM");
