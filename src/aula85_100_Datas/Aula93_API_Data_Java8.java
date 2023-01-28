@@ -9,6 +9,8 @@ import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Set;
 
 public class Aula93_API_Data_Java8 {
@@ -116,6 +118,18 @@ public class Aula93_API_Data_Java8 {
 		ZoneOffset zoneOffset = ZoneOffset.of("+05:00");
 		OffsetDateTime offsetDateTime = OffsetDateTime.of(nowComplete, zoneOffset);
 		System.out.println(offsetDateTime);
+		
+		System.out.println("\nConvertendo Date e Calendar para LocalDateTime");
+		
+		
+		Date date = new Date();
+		LocalDateTime dateToLocalDateTime = LocalDateTime.ofInstant(date.toInstant(),localZoneTime);
+		System.out.println(dateToLocalDateTime);
+		
+		Calendar nowCalendar = Calendar.getInstance();
+		LocalDateTime calendarToLocalDateTime = LocalDateTime.ofInstant(nowCalendar.toInstant(), localZoneTime);
+		System.out.println(calendarToLocalDateTime);
+		
 		
 		
 		
