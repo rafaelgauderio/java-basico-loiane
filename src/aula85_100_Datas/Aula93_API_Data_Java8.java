@@ -4,8 +4,12 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.OffsetDateTime;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Set;
 
 public class Aula93_API_Data_Java8 {
 
@@ -89,6 +93,30 @@ public class Aula93_API_Data_Java8 {
 		System.out.println(nowComplete.plusDays(20));
 		System.out.println(nowCompleteAustralia.plusMinutes(5));
 		System.out.println(birthComplete.minusMonths(3));
+		
+		//set é uma coleção que não permite valores repetidos
+		System.out.println("\nZonesTimes");
+		Set<String> zoneTimes = ZoneId.getAvailableZoneIds();
+		for(String zones : zoneTimes) {
+			System.out.println(zones);
+		}
+		
+		ZoneId localZoneTime = ZoneId.systemDefault();
+		ZoneId europeAthens = ZoneId.of("Europe/Athens");
+		System.out.println("\nFuso horário do Sistems: " + localZoneTime);
+		System.out.println("Fuso horário de Grécia/Atenas: " + europeAthens);
+		
+		//cortendo um horário Local para a hrora de atenas
+		ZonedDateTime zdtAthens = ZonedDateTime.of(LocalDateTime.parse("2021-02-19T15:00"), europeAthens);
+		ZonedDateTime zdtAthens02 = ZonedDateTime.parse("2021-02-19T15:00+02:00[Europe/Athens]");
+		System.out.println(zdtAthens);
+		System.out.println(zdtAthens02);
+		
+		// somando 5 horas ao horário Local
+		ZoneOffset zoneOffset = ZoneOffset.of("+05:00");
+		OffsetDateTime offsetDateTime = OffsetDateTime.of(nowComplete, zoneOffset);
+		System.out.println(offsetDateTime);
+		
 		
 		
 		
