@@ -2,8 +2,7 @@ package aula85_100_Datas;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
 public class Aula93_API_Data_Java8 {
@@ -48,6 +47,28 @@ public class Aula93_API_Data_Java8 {
 		System.out.println(now.isLeapYear());
 		System.out.println(LocalDate.parse("2022-12-15").isEqual(LocalDate.parse("2022-12-15")));
 		System.out.println(birth.isBefore(now));
+		
+		System.out.println("\nLocalTime");
+		
+		LocalTime midday = LocalTime.parse("12:00");
+		LocalTime midday02 = LocalTime.NOON;
+		LocalTime nowTime = LocalTime.now();
+		
+		System.out.println(midday);
+		System.out.println(midday02);
+		System.out.println(nowTime);
+		System.out.println(LocalTime.of(19,45,30));
+		System.out.println(LocalTime.parse("07:20"));
+		// Operações com hora
+		System.out.println(midday.plusMinutes(30));
+		System.out.println(midday.plusHours(3));
+		System.out.println(nowTime.minusHours(5));
+		System.out.println(midday.minus(1,ChronoUnit.HOURS).plus(20,ChronoUnit.MINUTES));
+		
+		System.out.println(nowTime);
+		System.out.println(nowTime.getHour());
+		System.out.println(nowTime.getMinute());
+		System.out.println(nowTime.getSecond());
 
 	}
 
