@@ -58,7 +58,7 @@ public class Aula92_Timezone {
 		System.out.println(nowCanberra.getTimeZone());
 		System.out.println(sdf.format(nowCanberra.getTime()));
 
-		nowBuenosAires.add(Calendar.HOUR_OF_DAY, tzBuenosAires.getOffset((System.currentTimeMillis())) / 1000 / 60 / 60);
+		//nowBuenosAires.add(Calendar.HOUR_OF_DAY, tzBuenosAires.getOffset((System.currentTimeMillis())) / 1000 / 60 / 60);
 		System.out.println("\nHorário de São Paulo: " + sdf.format(today.getTime()));
 		System.out.println("Horário de Buenos Aires: " + sdf.format(nowBuenosAires.getTime()));
 
