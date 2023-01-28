@@ -2,7 +2,9 @@ package aula85_100_Datas;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 
 public class Aula93_API_Data_Java8 {
@@ -69,6 +71,28 @@ public class Aula93_API_Data_Java8 {
 		System.out.println(nowTime.getHour());
 		System.out.println(nowTime.getMinute());
 		System.out.println(nowTime.getSecond());
+		
+		System.out.println("\nData com Hora");
+		
+		LocalDateTime nowComplete = LocalDateTime.now();
+		LocalDateTime nowCompleteAustralia = LocalDateTime.now(ZoneId.of("Australia/Canberra"));
+		LocalDateTime birthComplete = LocalDateTime.parse("1982-12-17T12:00");
+		
+		System.out.println(nowComplete);
+		System.out.println(nowCompleteAustralia);
+		
+		//System.out.println(LocalDateTime.of(year, month, dayOfMonth, hour, minute));
+		System.out.println(LocalDateTime.parse("2021-02-19T15:00"));
+		System.out.println(LocalDateTime.of(2020, 05, 17, 12, 45));
+		
+		//Operações Com LocalDateTime
+		System.out.println(nowComplete.plusDays(20));
+		System.out.println(nowCompleteAustralia.plusMinutes(5));
+		System.out.println(birthComplete.minusMonths(3));
+		
+		
+		
+		
 
 	}
 
