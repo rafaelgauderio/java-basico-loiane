@@ -29,7 +29,8 @@ public class Aula94_DiferencaEntreDatas {
 		System.out.println("*****************************************");
 		diferencaEntreDataComChronoUnit();
 		
-		
+		System.out.println("*****************************************");
+		durantion();	
 
 	}
 
@@ -100,6 +101,28 @@ public class Aula94_DiferencaEntreDatas {
 		System.out.println("Dias: " + dias);
 		System.out.println("Anos: " + anos);
 		System.out.println("Decadas: " + decadas);		
+		
+	}
+	
+	public static void durantion() {
+		
+		long quantidadeTempo = 1;
+		long diasSemana = 7;
+		
+		Duration dia = Duration.of(quantidadeTempo, ChronoUnit.DAYS);
+		System.out.println("Dia em segundos: "+ dia.getSeconds());
+		System.out.println("Dia em minutos: " + dia.toMinutes());
+		System.out.println("Dia em horas: " + dia.toHours());
+		
+		Period periodo = Period.ofWeeks(1);		
+		System.out.println("Semana em dias: " + periodo.getDays());
+		
+		Long anos = Period.ofYears(10).get(ChronoUnit.YEARS);
+		System.out.println("Anos: " + anos);
+		
+		Duration semana = Duration.of(diasSemana, ChronoUnit.DAYS);
+		System.out.println("Semana em dias: " + semana.toDays());
+		
 		
 	}
 
